@@ -1,0 +1,98 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f6f9;
+}
+
+
+.navbar {
+    background-color: #1A237E;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+
+.section {
+    padding: 5em 1em;
+    text-align: center;
+}
+
+.home {
+    background-color: #00BCD4;
+    color: white;
+}
+
+.about {
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+.services {
+    background-color: #FF7043;
+    color: white;
+}
+
+.contact {
+    background-color: #66BB6A;
+    color: white;
+}
+
+button {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.team-grid, .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.team-member, .service-card {
+    background-color: #1A237E;
+    color: white;
+    padding: 1.5em;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #1A237E;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
